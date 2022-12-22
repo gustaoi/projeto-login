@@ -34,14 +34,13 @@ section#login {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
 
     overflow: hidden;
 
     background-color: white;
 
     width: 60vw;
-    height: 82vh;
+    height: 85vh;
 
     border-radius: 20px;
 
@@ -49,6 +48,8 @@ section#login {
 
     transition: width .3s, heigth 0.3s;
     transition-timing-function: ease;
+
+    transform: translate(-50%, -50%);
 }
 
 section#login > div#imagem {
@@ -95,6 +96,42 @@ form > div.campo {
 
 div.campo > label {
     display: none;
+}
+
+div.campo > span {
+    color: white;
+
+    /*background-color: black;*/
+
+    font-size: 2em;
+
+    width: 40px;
+
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #6bf1edda;
+
+    font-size: 1em;
+
+/* definindo a largura do width com calculo */
+    width: calc(100% - 44.4px);
+
+    height: 100%;
+
+    border: 2px solid #5f2c82;
+    border-radius: 7px;
+
+    padding: 4px;
+
+/* Y - cima / baixo*/
+    transform: translateY(-10px);
+}
+
+/* Qando tiver digitando */
+div.campo > input:focus-within {
+    background-color: white;
 }
 
 form > input[type=submit] {
